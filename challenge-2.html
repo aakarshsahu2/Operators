@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number of weeks in a year</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            
+        }
+        
+        body,html{
+            width: 100%;
+            height: 100%;
+            font-family: "Gilroy";
+            background-color: royalblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+          }
+          
+
+
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <h1>Arithmetic operators</h1>
+        <h2>Number of weeks in a year</h2>
+        <p id="pera"></p>
+    </div>
+    
+
+    <script>
+        
+        var days = 365;
+        
+        var weeks = Math.floor(365/7);
+
+        var extraDay = 365%7;
+
+        var pera1 = "weeks and";
+        var pera2 = "Day is there in a year";
+        var pera3 = days + " " + pera1 + " " + extraDay + " " + pera2;
+        //document.write(pera3);
+        document.getElementById("pera").innerHTML = pera3;
+        
+    </script>
+</body>
+</html>
